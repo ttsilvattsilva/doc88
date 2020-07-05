@@ -16,10 +16,11 @@
         <table class="table" border="1" style="width: 400px;">
             <thead>
                 <tr>
-                    <th>Imagem</th>  
-                    <th>Descricao</th> 
+                    <th></th>  
+                    <th>Descricao</th>
+                    <th>Valor</th> 
                     <th>Qtd</th>
-                    <th>Preço</th>
+                    <th>Preço total</th>
 
                 </tr>
             </thead>
@@ -32,14 +33,16 @@
                         <img width="70" height="50" src="{{$item['url_foto']}}"></img>
                     </td>
                     <td style="text-align: center">{{$item['nome']}}</td>
+                    <td style="text-align: center">{{$item['preco']}}</td> 
                     <td style="text-align: center">{{$item['qtd']}}</td>  
-                    <td style="text-align: center">{{$item['preco']}}</td>                   
+                    <td style="text-align: center">{{$item['preco'] * $item['qtd']}}</td>                   
                 </tr>   
 
                 @endforeach
 
                 <tr>
                     <td colspan="3"></td>
+                    <td style="text-align: center">{{$qtd_total}}</td>
                     <td style="text-align: center">{{$preco_total}}</td>
                 </tr>
             </tbody>

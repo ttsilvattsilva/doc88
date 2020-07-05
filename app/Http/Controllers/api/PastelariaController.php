@@ -102,12 +102,12 @@ class PastelariaController extends Controller {
             switch ($module) {
                 case 'pastel':
                 case 'cliente':
-                    $model = new GenericaModel($module);
-                    $this->selectAction($acao, $model, $request, $module);
-                    break;
+                $model = new GenericaModel($module);
+                $this->selectAction($acao, $model, $request, $module);
+                break;
 
                 case 'pedido':
-                    $model = new GenericaModel($module);
+                $model = new GenericaModel($module);
 
                     if ($acao == 'create') { // Inserir Pedido
                         $arrPedidos = $this->pedidos($request, $model, $module, $acao);
@@ -124,12 +124,12 @@ class PastelariaController extends Controller {
 
                     break;
 
-                default:
+                    default:
                     die(json_encode(Array('status' => 'error', 'msg' => 'module invalido!')));
                     break;
+                }
             }
         }
-    }
 
     /**
      * Verifica itens que serão adicionado no Pedido
@@ -186,8 +186,10 @@ class PastelariaController extends Controller {
 
         //Valor todos do Pedido
         $arrNew['preco_total'] = 0;
+        $arrNew['qtd_total'] = 0;
         foreach ($arrNew['itens'] AS $idPastel => $vItens) {
-            $arrNew['preco_total'] += $vItens['preco'];
+            $arrNew['preco_total'] += $vItens['preco'] * $vItens['qtd'];
+            $arrNew['qtd_total'] += $vItens['qtd'];
         }
 
        
@@ -269,20 +271,20 @@ class PastelariaController extends Controller {
 
         switch ($acao) {
             case 'read':
-                $this->read($model, $request);
-                break;
+            $this->read($model, $request);
+            break;
             case 'list':
-                $this->list($model);
-                break;
+            $this->list($model);
+            break;
             case 'create':
-                $this->create($model, $request, $module);
-                break;
+            $this->create($model, $request, $module);
+            break;
             case 'update':
-                $this->update($model, $request, $module);
-                break;
+            $this->update($model, $request, $module);
+            break;
             case 'delete':
-                $this->delete($model, $request, $module);
-                break;
+            $this->delete($model, $request, $module);
+            break;
         }
     }
 
