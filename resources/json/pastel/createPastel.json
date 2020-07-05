@@ -1,0 +1,7 @@
+{
+    "module": "pastel",
+    "action": "create",
+    "nome": "Teste Pastel 2",
+    "preco": 6,
+    "url_foto": "https://aws-codestar-us-east-2-532773768415-api-pipe.s3.us-east-2.amazonaws.com/pastel_frango.png"    
+}

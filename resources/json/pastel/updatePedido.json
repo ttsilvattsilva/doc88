@@ -1,0 +1,7 @@
+{   
+    "module": "pedido",
+    "action": "update",
+    "id": 1,
+    "codigo_cliente": 1,
+    "codigo_pastel": 4    
+}

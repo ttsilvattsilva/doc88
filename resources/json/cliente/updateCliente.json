@@ -1,0 +1,12 @@
+{   
+    "module": "cliente",
+    "action": "update",
+    "id": 1,
+    "nome": "Carne com Pizza",
+    "email": "ttsilva.info@gmail.com",
+    "telefone": "11930123627",
+    "data_nascimento": "1991-03-20",
+    "endereco": "Av Paulista,50",
+    "complemento":"casa",
+    "bairro":"Jardim" 
+}

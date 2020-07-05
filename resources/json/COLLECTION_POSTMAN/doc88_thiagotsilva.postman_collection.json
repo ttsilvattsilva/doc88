@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "8fae630f-cfdb-45a6-9f75-623c7f499555",
+		"name": "doc88_thiagotsilva",
+		"description": "extrutura json\n\nTeste DOC88\nhttps://github.com/doc88git/backend-challenge\n\nmodule: cliente,pastel e pedido\naction: create,read,update,delete,list\n\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\": \"cliente\",\n    \"action\": \"create\",\n    \"nome\": \"Carne com Pizza\",\n    \"email\": \"ttsilvaaa.info@gmail.com\",\n    \"telefone\": \"11930123627\",\n    \"data_nascimento\": \"1991-03-20\",\n    \"endereco\": \"Av Paulista,50\",\n    \"complemento\":\"casa\",\n    \"bairro\":\"Jardim\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						},
+						"description": "Criar registro tabela cliente"
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"cliente\",\n    \"action\":\"read\",\n    \"id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						},
+						"description": "Filtrar cliente por id"
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"cliente\",\n    \"action\":\"list\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"cliente\",\n    \"action\":\"delete\",\n    \"id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \n    \"module\": \"cliente\",\n    \"action\": \"update\",\n    \"id\": 1,\n    \"nome\": \"Carne com Pizza\",\n    \"email\": \"ttsilva.info@gmail.com\",\n    \"telefone\": \"11930123627\",\n    \"data_nascimento\": \"1991-03-20\",\n    \"endereco\": \"Av Paulista,50\",\n    \"complemento\":\"casa\",\n    \"bairro\":\"Jardim\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pastel",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\": \"pastel\",\n    \"action\": \"create\",\n    \"nome\": \"Teste Pastel 2\",\n    \"preco\": 6,\n    \"url_foto\": \"https://aws-codestar-us-east-2-532773768415-api-pipe.s3.us-east-2.amazonaws.com/pastel_frango.png\"    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\": \"pastel\",\n    \"action\": \"read\",\n    \"id\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"pastel\",\n    \"action\":\"list\"    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"pastel\",\n    \"action\":\"delete\",\n    \"id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"module\": \"pastel\",\n    \"action\": \"update\",\n    \"id\": 3,\n    \"nome\": \"Carne com Pizzaa\",\n    \"preco\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pedido",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\": \"pedido\",\n    \"action\": \"create\",\n    \"codigo_cliente\": 1,\n    \"itens\":[\n        {\"codigo_pastel\":1},\n        {\"codigo_pastel\":3}\n    ]\n        \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"pedido\",\n    \"action\":\"read\",\n    \"id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"pedido\",\n    \"action\":\"list\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"module\":\"pedido\",\n    \"action\":\"delete\",\n    \"id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"module\": \"pedido\",\n    \"action\": \"update\",\n    \"id\": 1,\n    \"codigo_cliente\": 1,\n    \"codigo_pastel\": 4\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/teste/doc88/api/pastelaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"teste",
+								"doc88",
+								"api",
+								"pastelaria"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

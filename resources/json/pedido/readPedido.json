@@ -1,0 +1,5 @@
+{
+    "module":"pedido",
+    "action":"read",
+    "id": 1
+}
